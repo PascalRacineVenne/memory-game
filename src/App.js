@@ -3,7 +3,10 @@ import React from 'react';
 const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <h1>
+        Lives: <span className='playerLivesCount'></span>
+      </h1>
+      <section></section>
     </div>
   );
 };
