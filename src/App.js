@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Button from './components/button.js';
 import Card from './components/Card.js';
-// import Navbar from './components/Navbar.js';
+import Navbar from './components/Navbar.js';
 
 const cardImages = [
   { imgSrc: 'images/beatles.jpeg', matched: false },
@@ -60,8 +60,6 @@ const App = () => {
     }
   }, [choiceOne, choiceTwo]);
 
-  console.log(cards);
-
   const resetTurn = () => {
     setChoiceOne(null);
     setChoiceTwo(null);
@@ -71,11 +69,12 @@ const App = () => {
 
   return (
     <div className='container'>
-      {/* <Navbar /> */}
+      <Navbar />
       <header>
-        <h1>Magic Match</h1>
-        <Button onClick={shuffleCards} text='New Game' />|
-        <span className='playerLivesCount'>{turns}</span>
+        <Button onClick={shuffleCards} text='New Game' />
+        <div className='tries'>
+          <p className='playerLivesCount'>{turns}</p>
+        </div>
       </header>
       <div className='card-grid'>
         <section>

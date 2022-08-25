@@ -1,22 +1,15 @@
 import React from 'react';
+import Menu from './Menu.js';
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
-      <div className='left-col'>TITLE</div>
-      <div className='right-col'>
-        <ul>
-          <li>
-            <a href='/#'>ANCHOR TAGS</a>
-          </li>
-          <li>
-            <a href='/#'>ANCHOR TAGS</a>
-          </li>
-          <li>
-            <a href='/#'>ANCHOR TAGS</a>
-          </li>
-        </ul>
-      </div>
+    <div className='nav'>
+      <p className='title'>
+        <a href='/#' alt='skysearch'>
+          Magic Match
+        </a>
+      </p>
+      <Menu />
     </div>
   );
 };
