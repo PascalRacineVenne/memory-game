@@ -1,1 +1,29 @@
+@import './scss/card.scss';
+@import './scss/fonts.scss';
+@import './scss/reset.scss';
+@import './scss/variables.scss';
 
+body {
+  background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  height: 100%;
+}
+
+header {
+  background-color: pink;
+  margin: 2rem;
+}
+
+section {
+  display: grid;
+  grid-template-rows: repeat(4, 7.5rem);
+  grid-template-columns: repeat(4, 7.5rem);
+  perspective: 800px;
+  grid-gap: 2rem;
+}
