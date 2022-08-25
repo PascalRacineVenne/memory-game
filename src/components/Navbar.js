@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className='nav'>
       <p className='title'>
         <a href='/#' alt='skysearch'>
-          Magic Match
+          Matchtastic!
         </a>
       </p>
       <Menu />
