@@ -1,13 +1,21 @@
+// @use './scss/variables';
+@import './scss/button.scss';
 @import './scss/card.scss';
 @import './scss/fonts.scss';
 @import './scss/reset.scss';
-@import './scss/variables.scss';
 
 body {
-  background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+  font-family: 'Vollkorn';
+  margin: 0;
+  background: #1b1523;
+  // background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+}
+.container {
+  max-width: 860px;
+  margin: 40px auto;
 }
 
-.game {
+.card-grid {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,14 +24,14 @@ body {
 }
 
 header {
-  background-color: pink;
-  margin: 2rem;
+  // background-color: pink;
+  // margin: 2rem;
 }
 
 section {
   display: grid;
-  grid-template-rows: repeat(4, 7.5rem);
-  grid-template-columns: repeat(4, 7.5rem);
+  grid-template-rows: repeat(4, 9rem);
+  grid-template-columns: repeat(4, 9rem);
   perspective: 800px;
-  grid-gap: 2rem;
+  gap: 2rem;
 }
