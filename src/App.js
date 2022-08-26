@@ -39,7 +39,6 @@ const App = () => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
   };
 
-  // Handle choice
   useEffect(() => {
     if (choiceOne && choiceTwo) {
       if (choiceOne.imgSrc === choiceTwo.imgSrc) {
@@ -68,7 +67,6 @@ const App = () => {
     setTurns((prevTurns) => prevTurns + 1);
   };
 
-  // If all matches are true setShow true for Modal. (useEffect?)
   useEffect(() => {
     const result = cards.every((card) => {
       console.log(card.matched + 'are they??');
@@ -76,11 +74,6 @@ const App = () => {
     });
     setShow(result);
   }, [cards]);
-  // const allMatches = () => {
-  //   cards.every((card) => {
-  //     console.log(card.matched);
-  //   });
-  // };
 
   return (
     <div className='container'>
