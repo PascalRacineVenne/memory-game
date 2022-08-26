@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Button from './components/button.js';
 import Card from './components/Card.js';
 import Navbar from './components/Navbar.js';
+import Modal from './components/modal.js';
 
 const cardImages = [
   { imgSrc: 'images/beatles.jpeg', matched: false },
@@ -19,6 +20,7 @@ const App = () => {
   const [turns, setTurns] = useState(0);
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
+  const [show, setShow] = useState(false);
 
   const randomCompare = () => {
     return Math.random() - 0.5;
@@ -64,8 +66,21 @@ const App = () => {
     setChoiceOne(null);
     setChoiceTwo(null);
     setTurns((prevTurns) => prevTurns + 1);
-    console.log('reset');
   };
+
+  // If all matches are true setShow true for Modal. (useEffect?)
+  useEffect(() => {
+    const result = cards.every((card) => {
+      console.log(card.matched + 'are they??');
+      return card.matched === true;
+    });
+    setShow(result);
+  }, [cards]);
+  // const allMatches = () => {
+  //   cards.every((card) => {
+  //     console.log(card.matched);
+  //   });
+  // };
 
   return (
     <div className='container'>
@@ -92,6 +107,9 @@ const App = () => {
           })}
         </section>
       </div>
+      <Modal title='CONGRATS' show={show} onClose={() => setShow(false)}>
+        <p>Amazing you did it in {turns} turns!</p>
+      </Modal>
     </div>
   );
 };
