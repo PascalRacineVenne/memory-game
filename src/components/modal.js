@@ -5,24 +5,7 @@ const Modal = ({ show, onClose, title, children }) => {
     return null;
   }
 
-  // const closeOnEscapeKeyDown = useCallback(
-  //   (e) => {
-  //     if ((e.keyCode || e.charCode) === 27) {
-  //       onClose();
-  //     }
-  //   },
-  //   [onClose]
-  // );
-
-  // useEffect(() => {
-  //   document.body.addEventListener('keydown', closeOnEscapeKeyDown);
-  //   return function cleanUp() {
-  //     document.body.removeEventListener('keydown', closeOnEscapeKeyDown);
-  //   };
-  // }, [closeOnEscapeKeyDown]);
-
   return (
-    // <div className={`modal ${show ? 'show' : ''}`} onClick={onClose}>
     <div className='modal' onClick={onClose}>
       <div className='modal-content' onClick={(e) => e.stopPropagation()}>
         <div className='modal-header'>

@@ -100,7 +100,7 @@ const App = () => {
           })}
         </section>
       </div>
-      <Modal title='CONGRATS' show={show} onClose={() => setShow(false)}>
+      <Modal title='CONGRATS !' show={show} onClose={() => setShow(false)}>
         <p>Amazing you did it in {turns} turns!</p>
       </Modal>
     </div>
