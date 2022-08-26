@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className='nav'>
       <p className='title'>
-        <a href='/#' alt='skysearch'>
+        <a href='/#' alt='matchtastic'>
           Matchtastic!
         </a>
       </p>

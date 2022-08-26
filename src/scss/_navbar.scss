@@ -2,12 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  // margin-bottom: 1rem;
 }
 
 .title {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: 'Vollkorn SC', serif;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   padding: 0.5rem 0 0 0.5rem;
 }
