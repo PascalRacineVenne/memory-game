@@ -4,11 +4,7 @@ import Menu from './Menu.js';
 const Navbar = () => {
   return (
     <div className='nav'>
-      <p className='title'>
-        <a href='/#' alt='matchtastic'>
-          Matchtastic!
-        </a>
-      </p>
+      <p className='title'>Matchtastic!</p>
       <Menu />
     </div>
   );
