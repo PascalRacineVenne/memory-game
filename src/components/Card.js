@@ -1,7 +1,8 @@
 import React from 'react';
-import backface from '../img/cube.jpg';
+import backface from 'images/cube.jpg';
 
 const Card = ({ card, handleChoice, flipped }) => {
+  console.log(card);
   const handleClick = () => {
     handleChoice(card);
   };
