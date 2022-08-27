@@ -76,6 +76,10 @@ const App = () => {
     }
   }, [cards, turns]);
 
+  useEffect(() => {
+    shuffleCards();
+  }, []);
+
   console.log('this is show: ' + show);
   return (
     <div className='container'>

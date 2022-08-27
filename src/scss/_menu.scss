@@ -3,7 +3,7 @@
 nav {
   position: fixed;
   z-index: 1;
-  background: #2c2931;
+  background: $darkBlue;
   left: 0;
   top: 0;
   height: 100vh;
@@ -40,35 +40,36 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: $white;
+  font-size: 1.25rem;
   display: block;
   padding: 0.875em 5em 0.875em 4em;
   text-transform: uppercase;
   @include devices(desktop) {
     padding: 0 1rem;
-    border-bottom: rgba(255, 255, 255, 0.2);
-    font-family: 'Vollkorn SC';
+    border-bottom: $darkGrey;
+    font-family: $bodyFont;
     text-transform: unset;
   }
 }
 
 nav ul li a:hover {
-  background: #413e47;
+  background: $darkBlueHover;
   @include devices(desktop) {
     background: unset;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid $grey;
   }
 }
 
 .active {
-  background: rgba(255, 255, 255, 0.1);
+  background: $darkGrey;
   @include devices(desktop) {
     background: unset;
   }
 }
 
 .active:hover {
-  background: #413e47;
+  background: $darkBlueHover;
   @include devices(desktop) {
     background: unset;
   }

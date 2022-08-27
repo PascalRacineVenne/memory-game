@@ -8,9 +8,9 @@
   width: 100%;
   height: 100%;
   display: block;
-  border: 2px solid #fff;
+  border: 2px solid $white;
   border-radius: 0.25rem;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 5px 1rem;
+  box-shadow: $darkGrey 0px 5px 1rem;
 }
 
 .card .front {
@@ -35,8 +35,5 @@
 }
 .front,
 .back {
-  //   position: absolute;
   backface-visibility: hidden;
-  //   width: 100%;
-  //   height: 100%;
 }

@@ -9,7 +9,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // z-index: 1;
   opacity: 0;
   transition: all ease-in-out 0.3s;
   pointer-events: none;
@@ -20,9 +19,9 @@
   max-width: 100%;
   height: 300px;
   max-height: 100%;
-  background-color: #c23866;
-  border-radius: 4px;
-  color: #fff;
+  background-color: $darkPink;
+  border-radius: $border-radius;
+  color: $white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -48,23 +47,24 @@
 }
 
 .modal-title {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: $specialFont;
   font-size: 3rem;
   margin: 0;
 }
 
 .modal-body {
   padding: 0.875rem;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  font-family: 'Gloria Hallelujah', cursive;
+  border-top: 1px solid $lightGrey;
+  border-bottom: 1px solid $lightGrey;
+  font-family: $specialFont;
 }
 
 .btn-modal {
-  color: #fff;
+  color: $white;
+  font-size: 1.125rem;
   padding: 8px 16px;
   outline: none;
-  border: 2px solid #fff;
-  border-radius: 4px;
-  background-color: #c23866;
+  border: 2px solid $white;
+  border-radius: $border-radius;
+  background-color: $pink;
 }
