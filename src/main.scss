@@ -1,12 +1,12 @@
+@import './scss/variables';
+@import './scss/reset';
+@import './scss/mixins';
+@import './scss/fonts';
 @import './scss/button';
 @import './scss/card';
-@import './scss/fonts';
 @import './scss/menu';
 @import './scss/modal';
-@import './scss/mixins';
 @import './scss/navbar';
-@import './scss/reset';
-@import './scss/variables';
 
 body {
   font-family: 'Vollkorn';
