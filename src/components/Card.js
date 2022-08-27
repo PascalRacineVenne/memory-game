@@ -1,5 +1,5 @@
 import React from 'react';
-import backface from 'images/cube.jpg';
+import backface from '../img/cube.jpg';
 
 const Card = ({ card, handleChoice, flipped }) => {
   console.log(card);
