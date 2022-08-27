@@ -1,12 +1,13 @@
 import React from 'react';
 
 const Modal = ({ show, onClose, title, children }) => {
-  if (!show) {
-    return null;
-  }
+  // if (!show) {
+  //   return null;
+  // }
+  console.log('In modal this is show: ' + show);
 
   return (
-    <div className='modal' onClick={onClose}>
+    <div className={`modal ${show ? 'show' : ''}`} onClick={onClose}>
       <div className='modal-content' onClick={(e) => e.stopPropagation()}>
         <div className='modal-header'>
           <h4 className='modal-title'>{title}</h4>

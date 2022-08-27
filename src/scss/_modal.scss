@@ -9,7 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  // z-index: 1;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+  pointer-events: none;
 }
 
 .modal-content {
@@ -23,12 +26,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  transform: translateY(-200px);
+  transition: all ease-in-out 0.3s;
   @include devices(desktop) {
     width: 500px;
   }
 }
 
-.modal .show .modal-content {
+.modal.show {
+  pointer-events: visible;
+  opacity: 1;
+}
+
+.modal.show .modal-content {
   transform: translateY(0);
 }
 

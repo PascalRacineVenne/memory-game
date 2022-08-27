@@ -68,13 +68,15 @@ const App = () => {
   };
 
   useEffect(() => {
-    const result = cards.every((card) => {
-      console.log(card.matched + 'are they??');
-      return card.matched === true;
-    });
-    setShow(result);
-  }, [cards]);
+    if (turns !== 0) {
+      const result = cards.every((card) => {
+        return card.matched === true;
+      });
+      setShow(result);
+    }
+  }, [cards, turns]);
 
+  console.log('this is show: ' + show);
   return (
     <div className='container'>
       <Navbar />
