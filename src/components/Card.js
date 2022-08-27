@@ -1,4 +1,5 @@
 import React from 'react';
+import backface from '../img/cube.jpg';
 
 const Card = ({ card, handleChoice, flipped }) => {
   const handleClick = () => {
@@ -9,7 +10,7 @@ const Card = ({ card, handleChoice, flipped }) => {
       <div className={flipped ? 'flipped' : ''}>
         <img src={card.imgSrc} alt='card front' className='front' />
         <img
-          src='/images/cube.jpeg'
+          src={backface}
           onClick={handleClick}
           alt='card back'
           className='back'
