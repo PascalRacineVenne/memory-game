@@ -80,7 +80,6 @@ const App = () => {
     shuffleCards();
   }, []);
 
-  console.log('this is show: ' + show);
   return (
     <div className='container'>
       <Navbar />
